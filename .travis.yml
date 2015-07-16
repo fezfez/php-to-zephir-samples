@@ -25,6 +25,7 @@ install:
   - phpize -v
 
 before_script:
+  - cat composer.json
   - composer selfupdate
   - composer install
   - mv vendor/symfony/event-dispatcher/phpunit.xml.dist phpunit.xml

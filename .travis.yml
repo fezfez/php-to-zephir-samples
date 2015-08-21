@@ -1,36 +1,26 @@
 language: php
 php:
-  - 5.3
-  - 5.4
   - 5.5
   - 5.6
 
-before_install:
-  - sudo apt-get install re2c libpcre3-dev 
-
 install:
-  - cd /tmp
-  - wget https://github.com/json-c/json-c/archive/0eedf3802fad2d41e45eecd92af529440f0d7d3a.zip -O json-c
-  - unzip -q json-c
-  - cd json-c-0eedf3802fad2d41e45eecd92af529440f0d7d3a
-  - sh autogen.sh
-  - ./configure
-  - make
-  - sudo make install
-  - wget https://github.com/phalcon/zephir/archive/master.zip -O zephir
-  - unzip -q zephir
-  - cd zephir-master
-  - sudo ./install -c
-  - zephir
   - phpize -v
+  - composer selfupdate
+  - composer install --prefer-source
+  - cd ./vendor/phalcon/zephir/
+  - ./unit-tests/ci/before_install.sh
+  - export LD_LIBRARY_PATH="$TRAVIS_BUILD_DIR/build/lib":$LD_LIBRARY_PATH
+  - export LIBRARY_PATH="$TRAVIS_BUILD_DIR/build/lib":$LIBRARY_PATH
+  - export C_INCLUDE_PATH="$TRAVIS_BUILD_DIR/build/include"
+  - ./install-nosudo -c
+  - cd ./../../../
 
 before_script:
-  - cat composer.json
-  - composer selfupdate
   - composer install
   - mv vendor/symfony/event-dispatcher/phpunit.xml.dist phpunit.xml
   - mv vendor/symfony/event-dispatcher/Tests Tests
   - vendor/bin/php-to-zephir phpToZephir:convertDir vendor/symfony/event-dispatcher/
-  - cd $TRAVIS_BUILD_DIR && zephir build
+  - vendor/bin/zephir build
 
 script: php -dextension=symfony.so ./vendor/bin/phpunit
+

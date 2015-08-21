@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5ddd310b09bd7e4b1ab4211a8390ac0a",
+    "hash": "ef7959f23b7bb321741ca39954dc7977",
     "packages": [
         {
             "name": "fezfez/php-to-zephir",
@@ -12,22 +12,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fezfez/php-to-zephir.git",
-                "reference": "be4c73c0ee3a247f47163f6b77af68dfbbbda459"
+                "reference": "f36856f88b1faa47981aa9fa8187c7140023a44e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/be4c73c0ee3a247f47163f6b77af68dfbbbda459",
-                "reference": "be4c73c0ee3a247f47163f6b77af68dfbbbda459",
+                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/f36856f88b1faa47981aa9fa8187c7140023a44e",
+                "reference": "f36856f88b1faa47981aa9fa8187c7140023a44e",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "1.0.*",
-                "phalcon/zephir": "dev-master",
+                "nikic/php-parser": "1.4.*",
+                "phalcon/zephir": "0.7.*",
                 "phpdocumentor/reflection-docblock": "2.0.*",
-                "symfony/console": "2.6.*"
+                "symfony/console": "2.7.*"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.7.*"
+                "phpunit/phpunit": "4.8.*"
             },
             "bin": [
                 "bin/php-to-zephir"
@@ -53,20 +53,20 @@
                 "php to zephir",
                 "zephir"
             ],
-            "time": "2015-06-14 21:14:23"
+            "time": "2015-08-21 13:26:47"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.0.2",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "a8ffc6fcfcbae268656c8acf1298e378ac1ee5f1"
+                "reference": "196f177cfefa0f1f7166c0a05d8255889be12418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a8ffc6fcfcbae268656c8acf1298e378ac1ee5f1",
-                "reference": "a8ffc6fcfcbae268656c8acf1298e378ac1ee5f1",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/196f177cfefa0f1f7166c0a05d8255889be12418",
+                "reference": "196f177cfefa0f1f7166c0a05d8255889be12418",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +76,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -98,11 +98,11 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-11-04 22:12:46"
+            "time": "2015-07-14 17:31:05"
         },
         {
             "name": "phalcon/zephir",
-            "version": "dev-master",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phalcon/zephir.git",
@@ -213,21 +213,20 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.6.10",
-            "target-dir": "Symfony/Component/Console",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "042107bc202845086739414339e551fbe81293d7"
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/042107bc202845086739414339e551fbe81293d7",
-                "reference": "042107bc202845086739414339e551fbe81293d7",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "psr/log": "~1.0",
@@ -243,11 +242,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Console\\": ""
                 }
             },
@@ -267,11 +266,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-13 09:09:47"
+            "time": "2015-07-28 15:18:12"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",

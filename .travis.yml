@@ -16,7 +16,6 @@ install:
   - cd ./../../../
 
 before_script:
-  - composer install
   - mv vendor/symfony/event-dispatcher/phpunit.xml.dist phpunit.xml
   - mv vendor/symfony/event-dispatcher/Tests Tests
   - vendor/bin/php-to-zephir phpToZephir:convertDir vendor/symfony/event-dispatcher/

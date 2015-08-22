@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7842a42d644dfca5fbc8ca6e27f5f7c2",
+    "hash": "ac8351ed9af3dd9040c6ba66da03aa5a",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fezfez/php-to-zephir.git",
-                "reference": "68c3982ce92f0f6a24123eb012d2775716fd0b2d"
+                "reference": "103b4c71c92c780a0d4aa068928bf7636631d8d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/68c3982ce92f0f6a24123eb012d2775716fd0b2d",
-                "reference": "68c3982ce92f0f6a24123eb012d2775716fd0b2d",
+                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/103b4c71c92c780a0d4aa068928bf7636631d8d0",
+                "reference": "103b4c71c92c780a0d4aa068928bf7636631d8d0",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +107,7 @@
                 "php to zephir",
                 "zephir"
             ],
-            "time": "2015-08-21 14:08:10"
+            "time": "2015-08-22 16:24:09"
         },
         {
             "name": "nikic/php-parser",

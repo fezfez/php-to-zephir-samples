@@ -18,11 +18,12 @@ install:
 before_script:
   - mv vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/phpunit.xml.dist phpunit.xml
   - mv vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher/Tests Tests
+
+script:
   - vendor/bin/php-to-zephir phpToZephir:convertDir vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher
   - vendor/bin/zephir build
+  - php -dextension=symfony.so ./vendor/bin/phpunit
 
 after_failure:
   - cat compile-errors.log
-
-script: php -dextension=symfony.so ./vendor/bin/phpunit
 

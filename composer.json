@@ -10,7 +10,7 @@
 	"homepage" : "https://github.com/fezfez/fezfez/php-to-zephir-samples",
 	"require" : {
 		"fezfez/php-to-zephir" : "dev-master",
-		"symfony/event-dispatcher" : "2.7.*",
+		"symfony/event-dispatcher" : "2.4.*",
 		"phpunit/phpunit" : "4.8.*"
 	},
 	"support" : {

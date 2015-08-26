@@ -21,5 +21,8 @@ before_script:
   - vendor/bin/php-to-zephir phpToZephir:convertDir vendor/symfony/event-dispatcher/Symfony/Component/EventDispatcher
   - vendor/bin/zephir build
 
+after_failure:
+  - cat compile-errors.log
+
 script: php -dextension=symfony.so ./vendor/bin/phpunit
 

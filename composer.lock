@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fezfez/php-to-zephir.git",
-                "reference": "d2ff8088dd654ab2c1895fe1dc2958be75252b1e"
+                "reference": "3cd0b40d7c2d9a9089896ee08c00f10e25390a39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/d2ff8088dd654ab2c1895fe1dc2958be75252b1e",
-                "reference": "d2ff8088dd654ab2c1895fe1dc2958be75252b1e",
+                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/3cd0b40d7c2d9a9089896ee08c00f10e25390a39",
+                "reference": "3cd0b40d7c2d9a9089896ee08c00f10e25390a39",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +107,7 @@
                 "php to zephir",
                 "zephir"
             ],
-            "time": "2015-08-26 21:50:50"
+            "time": "2015-08-27 09:46:32"
         },
         {
             "name": "nikic/php-parser",
@@ -1075,7 +1075,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/f19fc3784e15f39cb57529e814b48dcae10bf884",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/e7e676ed30c837fc442ec36274b16e8a51377249",
                 "reference": "f19fc3784e15f39cb57529e814b48dcae10bf884",
                 "shasum": ""
             },

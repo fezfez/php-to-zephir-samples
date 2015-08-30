@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fezfez/php-to-zephir.git",
-                "reference": "0f1c6c1f9dde04183a368866c191a1c9d93b27cd"
+                "reference": "15648d4e6d779b187eb9ffd179129f3bed699ac4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/0f1c6c1f9dde04183a368866c191a1c9d93b27cd",
-                "reference": "0f1c6c1f9dde04183a368866c191a1c9d93b27cd",
+                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/15648d4e6d779b187eb9ffd179129f3bed699ac4",
+                "reference": "15648d4e6d779b187eb9ffd179129f3bed699ac4",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +107,7 @@
                 "php to zephir",
                 "zephir"
             ],
-            "time": "2015-08-28 09:33:56"
+            "time": "2015-08-30 10:01:50"
         },
         {
             "name": "nikic/php-parser",
@@ -160,12 +160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phalcon/zephir.git",
-                "reference": "5c9bc2d866fbb690e54b9a7ed359aeb60302c97d"
+                "reference": "d564cbafd995e85a277e90ec8989588e8587a244"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phalcon/zephir/zipball/5c9bc2d866fbb690e54b9a7ed359aeb60302c97d",
-                "reference": "5c9bc2d866fbb690e54b9a7ed359aeb60302c97d",
+                "url": "https://api.github.com/repos/phalcon/zephir/zipball/d564cbafd995e85a277e90ec8989588e8587a244",
+                "reference": "d564cbafd995e85a277e90ec8989588e8587a244",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +214,7 @@
             "keywords": [
                 "extension"
             ],
-            "time": "2015-08-27 02:04:06"
+            "time": "2015-08-29 14:34:46"
         },
         {
             "name": "phpdocumentor/reflection-docblock",

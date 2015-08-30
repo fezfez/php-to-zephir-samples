@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fezfez/php-to-zephir.git",
-                "reference": "15648d4e6d779b187eb9ffd179129f3bed699ac4"
+                "reference": "93056902c9a3169e542d1f0529b840ee66e3db0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/15648d4e6d779b187eb9ffd179129f3bed699ac4",
-                "reference": "15648d4e6d779b187eb9ffd179129f3bed699ac4",
+                "url": "https://api.github.com/repos/fezfez/php-to-zephir/zipball/93056902c9a3169e542d1f0529b840ee66e3db0b",
+                "reference": "93056902c9a3169e542d1f0529b840ee66e3db0b",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +107,7 @@
                 "php to zephir",
                 "zephir"
             ],
-            "time": "2015-08-30 10:01:50"
+            "time": "2015-08-30 10:22:45"
         },
         {
             "name": "nikic/php-parser",

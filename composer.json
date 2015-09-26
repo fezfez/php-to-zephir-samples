@@ -9,10 +9,10 @@
 	],
 	"homepage" : "https://github.com/fezfez/fezfez/php-to-zephir-samples",
 	"require" : {
-		"fezfez/php-to-zephir" : "dev-master",
+		"fezfez/php-to-zephir" : "0.2.*",
 		"symfony/event-dispatcher" : "2.7.*",
 		"phpunit/phpunit" : "4.8.*",
-		"phalcon/zephir" : "dev-development as 0.7.1"
+		"phalcon/zephir" : "0.8.*"
 	},
 	"support" : {
 		"source" : "https://github.com/fezfez/php-to-zephir-samples",

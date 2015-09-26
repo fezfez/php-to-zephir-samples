@@ -8,19 +8,6 @@ install:
   - phpize -v
   - composer selfupdate
   - composer install --prefer-source
-
-before_script:
-  - mkdir -p converted/Symfony
-  - mv config.json converted/Symfony/config.json
-  - mv vendor/symfony/event-dispatcher/phpunit.xml.dist converted/Symfony/phpunit.xml
-  - mv vendor/symfony/event-dispatcher/Tests converted/Symfony/Tests
-  - mv vendor/symfony/event-dispatcher/composer.json converted/Symfony/composer.json
-  - composer update
-  - composer require phalcon/zephir:0.8.*
-
-script:
-  - vendor/bin/php-to-zephir phpToZephir:convert vendor/symfony/event-dispatcher/
-  - cd vendor/symfony/event-dispatcher/
   - cd ./vendor/phalcon/zephir/
   - ./unit-tests/ci/before_install.sh
   - export LD_LIBRARY_PATH="$TRAVIS_BUILD_DIR/build/lib":$LD_LIBRARY_PATH
@@ -28,6 +15,14 @@ script:
   - export C_INCLUDE_PATH="$TRAVIS_BUILD_DIR/build/include"
   - ./install-nosudo -c
   - cd ./../../../
+
+before_script:
+  - mv vendor/symfony/event-dispatcher/phpunit.xml.dist phpunit.xml
+  - mv vendor/symfony/event-dispatcher/Tests Tests
+
+script:
+  - vendor/bin/php-to-zephir phpToZephir:convert vendor/symfony/event-dispatcher/
+  - mv converted/Symfony/Symfony/ Symfony
   - vendor/bin/zephir build
   - php -dextension=symfony.so ./vendor/bin/phpunit
 

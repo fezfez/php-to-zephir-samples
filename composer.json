@@ -12,7 +12,12 @@
 		"fezfez/php-to-zephir" : "0.2.*",
 		"symfony/event-dispatcher" : "2.7.*",
 		"phpunit/phpunit" : "4.8.*",
-		"phalcon/zephir" : "0.8.*"
+		"phalcon/zephir" : "0.8.*",
+		        "symfony/phpunit-bridge": "~2.7",
+        "symfony/dependency-injection": "~2.6",
+        "symfony/expression-language": "~2.6",
+        "symfony/config": "~2.0,>=2.0.5",
+        "symfony/stopwatch": "~2.3"
 	},
 	"support" : {
 		"source" : "https://github.com/fezfez/php-to-zephir-samples",

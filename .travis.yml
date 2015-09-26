@@ -17,7 +17,7 @@ install:
   - cd ./../../../
 
 before_script:
-  - mkdir -i converted/Symfony
+  - mkdir -p converted/Symfony
   - mv config.json converted/Symfony/config.json
   - mv vendor/symfony/event-dispatcher/phpunit.xml.dist converted/Symfony/phpunit.xml
   - mv vendor/symfony/event-dispatcher/Tests converted/Symfony/Tests

@@ -25,7 +25,7 @@ before_script:
   - composer update
 
 script:
-  - vendor/bin/php-to-zephir phpToZephir:convertDir vendor/symfony/event-dispatcher/
+  - vendor/bin/php-to-zephir phpToZephir:convert vendor/symfony/event-dispatcher/
   - cd vendor/symfony/event-dispatcher/
   - composer require phalcon/zephir:0.8.*
   - vendor/bin/zephir build

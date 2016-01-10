@@ -4,6 +4,11 @@ php:
   - 5.6
   - 7
 
+addons:
+  apt:
+    packages:
+    - tree
+
 install:
   - phpize -v
   - composer selfupdate
@@ -15,7 +20,6 @@ install:
   - export C_INCLUDE_PATH="$TRAVIS_BUILD_DIR/build/include"
   - ./install-nosudo -c
   - cd ./../../../
-  - apt-get install tree -y
 
 before_script:
   - mv vendor/symfony/event-dispatcher/phpunit.xml.dist phpunit.xml

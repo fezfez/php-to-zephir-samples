@@ -22,6 +22,7 @@ before_script:
 
 script:
   - vendor/bin/php-to-zephir phpToZephir:convert vendor/symfony/event-dispatcher/
+  - ls -lha
   - mv converted/Symfony/Symfony/ Symfony
   - vendor/bin/zephir build
   - php -dextension=symfony.so ./vendor/bin/phpunit

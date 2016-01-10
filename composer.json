@@ -24,6 +24,5 @@
 		"email" : "demonchaux.stephane@gmail.com",
 		"issues" : "https://github.com/fezfez/php-to-zephir-samples/issues",
 		"wiki" : "https://github.com/fezfez/php-to-zephir-samples/blob/master/README.md"
-	},
-	"minimum-stability" : "dev"
+	}
 }
